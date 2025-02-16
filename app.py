@@ -18,7 +18,7 @@ app.config["child_pid"] = None
 app.config["cmd"] = ["/bin/bash"]
 
 
-#this function is called when the terminal is connected
+# this function is called when the terminal is connected
 @socketio.on("connect", namespace="/pty")
 def connect():
     # check if the file descriptor is set 
